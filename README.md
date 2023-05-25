@@ -1,0 +1,1 @@
+# nanostores-firebase-starter
