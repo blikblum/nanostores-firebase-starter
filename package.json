@@ -1,0 +1,10 @@
+{
+  "name": "nanostores-firebase-starter",
+  "packageManager": "yarn@3.5.1",
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "start-firebase": "npx firebase emulators:start --only firestore,auth,functions,storage --project demo-nanostores"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "maxNodeModuleJsDepth": 1,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "experimentalDecorators": true,
+    // This must be specified if "paths" is set
+    "baseUrl": "./src/",
+    // Relative to "baseUrl"
+    "paths": {
+      "*": [
+        "*"
+      ]
+    }
+  }
+}
