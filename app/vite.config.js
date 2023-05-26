@@ -9,10 +9,10 @@ export default defineConfig(({ mode }) => {
     build: {
       // Relative to the root
       outDir: '../dist',
+      sourcemap: 'hidden',
     },
     publicDir: '../public',
     envDir: '..',
-    build: { sourcemap: 'hidden' },
     plugins: [tsConfigPaths()],
     css: {
       postcss: { plugins: [autoprefixer()] },
