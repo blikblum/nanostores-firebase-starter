@@ -34,7 +34,7 @@ module.exports = {
         name: 'componentName',
         message: 'Component name:',
         initial() {
-          return h.inflection.camelize(this.state.answers.tagName.replace('-', '_'))
+          return h.inflection.camelize(this.state.answers.tagName.replaceAll('-', '_'))
         },
       },
     ])
