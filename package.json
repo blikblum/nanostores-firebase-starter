@@ -1,6 +1,6 @@
 {
   "name": "nanostores-firebase-starter",
-  "packageManager": "yarn@3.5.1",
+  "packageManager": "yarn@4.0.1",
   "workspaces": [
     "app"
   ],

@@ -1,9 +1,9 @@
 import 'setup/all.js'
-import { LitElement, html } from 'lit'
 import { withStore } from 'lit-nanostores'
 import { $counter, incrementCount } from 'stores/counter.js'
 import { saveUser } from 'stores/user.service.js'
 import { $user } from 'stores/user.js'
+import { Component, html } from 'helpers/component.js'
 
 /**
  * An example element.
@@ -11,13 +11,13 @@ import { $user } from 'stores/user.js'
  * @slot - This element has a slot
  * @csspart button - The button
  */
-export class AppRoot extends withStore(LitElement) {
+export class AppRoot extends withStore(Component) {
   static get properties() {
     return {
       /**
        * The number of times the button has been clicked.
        */
-      count: { type: Number, store: $counter },
+      counter: { type: Number, store: $counter },
       user: { store: $user },
     }
   }
@@ -29,11 +29,11 @@ export class AppRoot extends withStore(LitElement) {
   }
 
   render() {
-    const { count, user = {} } = this
+    const { counter, user = {} } = this
     return html`
       <slot></slot>
       <div class="card">
-        <button @click=${incrementCount} part="button">count is ${count}</button>
+        <button @click=${incrementCount} part="button">counter is ${counter}</button>
       </div>
       <div>User name: ${user.name}</div>
       <div>User email: ${user.email}</div>

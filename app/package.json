@@ -10,24 +10,24 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@tabler/core": "^1.0.0-beta19",
-    "firebase": "^9.22.0",
-    "lit": "^2.6.1",
+    "@tabler/core": "^1.0.0-beta9",
+    "firebase": "^10.5.2",
+    "lit": "^2.8.0",
     "lit-nanostores": "^0.1.0",
-    "nanostores": "^0.9.0"
+    "nanostores": "^0.9.4"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "7.0.17",
-    "@storybook/addon-links": "7.0.17",
-    "@storybook/blocks": "7.0.17",
-    "@storybook/web-components": "7.0.17",
-    "@storybook/web-components-vite": "7.0.17",
-    "autoprefixer": "^10.4.14",
+    "@storybook/addon-essentials": "7.5.2",
+    "@storybook/addon-links": "7.5.2",
+    "@storybook/blocks": "7.5.2",
+    "@storybook/web-components": "7.5.2",
+    "@storybook/web-components-vite": "7.5.2",
+    "autoprefixer": "^10.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.62.1",
-    "storybook": "7.0.17",
-    "vite": "^4.3.2",
-    "vite-tsconfig-paths": "^4.2.0"
+    "sass": "^1.69.5",
+    "storybook": "7.5.2",
+    "vite": "^4.5.0",
+    "vite-tsconfig-paths": "^4.2.1"
   }
 }
